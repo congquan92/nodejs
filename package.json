@@ -1,19 +1,31 @@
 {
-  "name": "nodejs",
+  "name": "nodejs-blog-api",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
+  "description": "A complete RESTful API for blog system built with Node.js, Express.js and MySQL",
+  "license": "MIT",
+  "author": "Your Name",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "init-db": "node init-db.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "blog",
+    "api",
+    "rest",
+    "jwt",
+    "authentication"
+  ],
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "dotenv": "^17.2.2",
-    "express": "^5.1.0",
+    "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.14.4",
     "nodemon": "^3.1.10"
